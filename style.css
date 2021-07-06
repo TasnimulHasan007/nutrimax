@@ -35,6 +35,10 @@ body{
     min-height: 100vh;
 }
 
+#section-1 p{
+    max-width: 27rem;
+}
+
 .section h1{
     font-size: 4rem;
     font-weight: 700;
@@ -58,7 +62,6 @@ span{
 }
 
 .section p{
-    max-width: 27rem;
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 2.08rem;
