@@ -221,10 +221,6 @@ footer p{
     .half{
         width: 100%;
     }
-    #section-2{
-        background: none;
-        background-color:rgba(252, 143, 73, 0.1);
-    }
     #section-2 img{
         display: none;
     }
