@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 :root{
     --color-1: rgb(251, 162, 79);
     --color-2: rgb(255, 30, 30);
@@ -7,7 +9,7 @@
     --heading-color: #575757;
     --heading-color-2: #707070;
     --paragraph-color: #828282;
-    --footer-color: #0B0D17;
+    --footer-background: #0B0D17;
     --footer-text: #5B5B5B;
     --white: #ffffff;
 }
@@ -30,7 +32,7 @@ body{
     padding: 0 7.5vw;
 }
 
-#section-1{
+#section-1 , #section-3{
     min-height: 100vh;
 }
 
@@ -52,7 +54,7 @@ body{
     margin-bottom: 3.2rem;
 }
 
-.section span{
+span{
     color: var(--color-1);
 }
 
@@ -118,6 +120,7 @@ body{
 #recipe-heading h2{
     margin-bottom: 2rem;
     text-align: center;
+    color: rgb(24, 25, 31);
 }
 
 #recipe-heading p{
@@ -132,9 +135,9 @@ body{
 
 #card-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 3.5rem;
-    margin: 1.3rem 0;
+    margin: 4rem 0;
 }
 
 .card{
@@ -153,4 +156,47 @@ body{
 
 .card p{
     text-align: left;
+}
+
+#stats{ 
+    width: 100%;
+    display: flex;
+    margin: 4rem 0 6rem 0;
+    padding: 4rem 6rem;
+    justify-content: space-between;
+    background: var(--white);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 2rem;
+}
+
+#stats h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(24, 25, 31);
+    margin-bottom: 0.5rem;
+}
+
+#stats p{
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer{
+    background: var(--footer-background);
+}
+
+footer h3{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 2rem;
+    color: var(--footer-text);
+    text-align: center;
+    padding: 2.4rem 0;
+}
+
+footer p{
+    font-size: 1rem;
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 7.6rem;
 }
