@@ -114,12 +114,8 @@ span{
  }
 
 #section-3{
-    margin-top: 5rem;
     flex-direction: column;
-}
-
-#recipe-heading{
-    margin: auto;
+    margin-top: 5rem;
 }
 
 #recipe-heading h2{
@@ -130,7 +126,6 @@ span{
 
 #recipe-heading p{
     max-width: 50rem;
-    margin-bottom: 0;
     text-align: center;
 }
 
@@ -143,6 +138,7 @@ span{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3.5rem;
     margin: 4rem 0;
+    margin: auto;
 }
 
 .card{
