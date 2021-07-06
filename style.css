@@ -5,7 +5,7 @@
 :root{
     --color-1: rgb(251, 162, 79);
     --color-2: rgb(255, 30, 30);
-    --gradient: linear-gradient(45deg, var(--color-1), var(--color-2));
+    --gradient: linear-gradient(45deg, var(--color-2), var(--color-1));
     --heading-color: #575757;
     --heading-color-2: #707070;
     --paragraph-color: #828282;
@@ -58,7 +58,7 @@ body{
 }
 
 span{
-    color: var(--color-1);
+    color: var(--color-2);
 }
 
 .section p{
@@ -202,6 +202,58 @@ span{
     font-weight: 400;
 }
 
+#section-4{
+    flex-direction: column;
+    background: var(--gradient);
+    min-height: 100vh;
+    justify-content: center;
+}
+
+#section-4 h2{
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+#section-4 a{
+    background: transparent;
+    border: 0.2rem solid var(--white);
+    margin-bottom: 5rem;
+}
+
+#section-4 a:hover{
+    color: var(--color-2);
+    background: var(--white);
+    box-shadow: none;
+}
+
+.testimonial-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.testimonial{
+    padding: 2rem;
+    width: 33.33%;
+}
+
+.testimonial i{
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.testimonial p{
+    margin: 1.2rem 0;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.testimonial h4{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
 footer{
     background: var(--footer-background);
 }
@@ -257,6 +309,14 @@ footer p{
     .half{
         width: 100%;
     }
+
+    .testimonial-container{
+        flex-wrap: wrap;
+    }
+
+    .testimonial{
+        width: 50%;
+    }
 }
 
 @media (max-width:768px) {
@@ -266,5 +326,12 @@ footer p{
     .section h1{
         font-size: 3rem;
         line-height: 4rem;
+    }
+    .testimonial-container{
+        flex-direction: column;
+    }
+
+    .testimonial{
+        width: 100%;
     }
 }
