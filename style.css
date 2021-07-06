@@ -199,6 +199,7 @@ span{
 }
 
 #section-4{
+    margin-top: 5rem;
     flex-direction: column;
     background: var(--gradient);
     min-height: 100vh;
